@@ -1,4 +1,6 @@
 import './App.css'
+import OrdersTable from './components/OrdersTable'
+import SalesChart from './components/SalesChart'
 import StatCards from './components/StatCards'
 import Layout from './layout'
 
@@ -8,6 +10,8 @@ function App() {
     <>
       <Layout>
         <StatCards />
+        <SalesChart />
+        <OrdersTable />
       </Layout>
     </>
   )

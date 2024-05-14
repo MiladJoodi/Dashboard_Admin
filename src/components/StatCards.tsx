@@ -47,7 +47,7 @@ const StatCards = () => {
                     <span className="text-[#202224] font-semibold text-[15px]">
                         {card.title}
                     </span>
-                    <span className="text-[28px] text-[#202224] font-semibold">
+                    <span className="text-[28px] text-[#202224] font-semibold farsi">
                         {card.value}
                     </span>
                     <div className="flex items-center gap-2">
@@ -69,6 +69,11 @@ const StatCards = () => {
                         </span>
 
                     </div>
+                    <img
+                    src={card.icon}
+                    alt="icon"
+                    className="absolute right-5 top-3 w-[14.5%]"
+                    />
                 </div>
             ))}
         </div>
