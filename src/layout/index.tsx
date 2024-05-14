@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
 interface Props {
@@ -6,9 +7,9 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div>
+        <div className="">
             <Sidebar />
-            {/* Navbar */}
+            <Navbar />
             <div className="w-full ml-[76px] mt-[70px] border-t border-gray-200 px-6 pt-3 box-border flex flex-col">
                 <span className="font-bold text-[#202224] text-[30px]">
                     داشبورد
