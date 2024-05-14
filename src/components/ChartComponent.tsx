@@ -4,7 +4,7 @@ const ChartComponent = () => {
     
     const options = {
         chart: {
-          type: "منطقه",
+          type: "area",
         },
     
         xaxis: {
