@@ -42,7 +42,7 @@ const columns = [
       quantity: "1",
       totalPrice: "$896",
       status: (
-        <div className="bg-[#00B69B] rounded-full px-3 py-1 text-white">
+        <div className="bg-[#00B69B] rounded-full px-3 py-1 text-white ">
           تحویل داده شده
         </div>
       ),
