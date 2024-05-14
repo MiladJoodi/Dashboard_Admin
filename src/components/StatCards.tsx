@@ -41,13 +41,13 @@ const StatCards = () => {
         <div className="flex md:w-[95%] w-[80%] items-center justify-between flex-wrap flex-col md:flex-row md:gap-3 gap-5 mt-5">
             {cards.map((card) => (
                 <div
-                    className="bg-white rounded-xl shadow-sm pl-5 md:pr-0 py-3 relative flex-col justify-between gap-3 md:w-[23%] w-full"
+                    className="bg-white rounded-xl shadow-sm pl-5 md:pr-0 py-3 relative flex flex-col justify-between gap-3 md:w-[23%] w-full"
                     key={card.title}
                 >
                     <span className="text-[#202224] font-semibold text-[15px]">
                         {card.title}
                     </span>
-                    <span className="text-[#202224] font-semibold text-[15px]">
+                    <span className="text-[28px] text-[#202224] font-semibold">
                         {card.value}
                     </span>
                     <div className="flex items-center gap-2">
@@ -63,6 +63,11 @@ const StatCards = () => {
                                 {card.percentage}
                             </span>
                         </div>
+
+                        <span className="text-[#606060] text-[14px]">
+                            {card.profit ? "بالا برای دیروز" : "پایین برای دیروز"}
+                        </span>
+
                     </div>
                 </div>
             ))}
